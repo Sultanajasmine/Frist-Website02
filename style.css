@@ -1,0 +1,564 @@
+*{
+    margin: 0;
+    padding:0 ;
+}
+.main{
+    width: 100%;
+    height: 109vh;
+}
+.navbar{
+    margin: auto;
+    display: flex;
+    box-shadow: 0 8px 11px green;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(166, 225, 107);
+    height: 70px;
+}
+.icon{
+    float: left;
+    height: 70px;
+    margin-left: 30px;
+}
+.logo{
+    color: green;
+    font-size: 40px;
+    font-family: mv boli;
+    margin-right: 5px;
+    float: left;
+    padding-top: 10px;
+    
+}
+.logo i{
+    font-size: 40px;
+    color: orangered;
+}
+.logo span{
+    color: orangered;
+}
+.menu{
+    height: 70px;
+    float: left;
+}
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    list-style: none;
+    margin-left: 35px;
+    margin-top: 27px;
+    font-size: 20px;
+}
+ul li a{
+    text-decoration: none;
+    color:black;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover,
+.menu .home-active{
+    background-color: green;
+    color: gold;
+    /* border-radius: 10px; */
+    transition: background 0.5s;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile p{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: green;
+}
+
+/* home css */
+
+.swiper-wrapper{
+    margin-top: 40px;
+}
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    /* background: url(imges/b-1\,png.png); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center; */
+    /* overflow: hidden; */
+}
+.container img{
+    width: 400px;
+    position: absolute;
+    /* bottom: -50px; */
+    right: 200px;
+}
+.home-text{
+    padding: 0 150px;
+}
+.home-text span{
+    font-weight: 400;
+    text-transform: uppercase;
+    color: green;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.home-text h1{
+    font-size: 37px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-style: oblique;
+
+}
+.home-btn{
+    background-color: green;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    border: none;
+    color: #eeeef9;
+    transition: 0.5s ease-in;
+}
+.home-btn i{
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding: 8px;
+}
+.home-btn:hover{
+    background: orange;
+    color: black;
+}
+.swiper-button-next{
+    background: url(imges/r-a-1.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    margin-right: 20px;
+}
+.swiper-button-next::after{
+    display: none;
+}
+.swiper-button-prev{
+    background: url(imges/left-arr.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    margin-left: 20px;
+}
+.swiper-button-prev::after{
+    display: none;
+}
+/* categories css */
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.categories-btn{
+    background-color: green;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    border: none;
+    color: #eeeef9;
+    transition: 0.5s ease-in;
+
+}
+.categories-btn i{
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding: 8px;
+    margin-left: 6px;
+}
+.categories-btn:hover{
+    background: orange;
+    color: black;
+}
+.heading h1{
+    font-size: 30px;
+    font-weight: 600;
+    font-style: oblique;
+}
+.heading span{
+    color: green;
+}
+.categories-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+    gap: 10px;
+    margin-top: 20px;
+}
+.categories-container .box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 0.5rem;
+}
+.categories-container .box img{
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    object-position: center;
+}
+.categories-container .box h2{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: oblique;
+}
+.categories-container .box span{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+.categories-container .box i{
+    padding: 10px;
+    background: green;
+    color: antiquewhite;
+    border-radius: 50%;
+    margin-top: 20px;
+    position: absolute;
+    bottom: -8%;
+    display: none;
+}
+.categories-container .box i:hover{
+    background: orange;
+    transition: 0.2s all linear;
+}
+.categories-container .box:hover i{
+    transition: 0.2s all linear;
+    display: block;
+}
+.box1{
+    background: #fef4ea;
+}
+.box2{
+    background: #e9f4e3;
+}
+.box3{
+    background: #faeaea;
+}
+.box4{
+    background: #eeeef9;
+}
+.box5{
+    background: #f7f6d7;
+}
+
+/* products css */
+
+.products{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+.products-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 15px;
+    margin-top: 20px;
+}
+.products-container .box{
+    padding: 20px;
+    box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+    border-radius: 0.5rem;
+    position: relative;
+}
+.products-container .box img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+}
+.products-container .box span{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: green;
+}
+.products-container .box h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: orangered;
+    font-style: oblique;
+}
+.products-container .box .price{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: orange;
+}
+.products-container .box .price span{
+    color: green;
+}
+ .fa-cart-shopping{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    background: green;
+    color: white;
+    font-size: 20px;
+    border-radius: 0.5rem 0 0.5rem 0;
+}
+.fa-cart-shopping:hover{
+    background: orange;
+    transition: 0.2s all linear;
+}
+.fa-heart{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: orangered;
+}
+.products-container .box .discount{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: orangered;
+    color: white;
+    padding: 4px 18px;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}
+
+/* about css */
+
+.about{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(21rem,auto));
+    gap: 15px;
+    margin-top: 60px;
+}
+.about-text{
+    margin-top: 70px;
+}
+.about-text span{
+    text-transform: uppercase;
+    color: green;
+    font-size: 35px;
+    font-style: oblique;
+    font-weight: bold;
+}
+.about-text p{
+    margin: 0.5rem 0 1rem;
+    color: orangered;
+}
+.about-btn{
+    background-color: green;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    border: none;
+    color: #eeeef9;
+    transition: 0.5s ease-in;
+
+}
+.about-btn i{
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+    padding: 8px;
+    margin-left: 6px;
+}
+/* customers css */
+
+.customers{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+.customers h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    font-style: oblique;
+    font-weight: bold;
+    color: green;
+}
+.customers-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(280px,auto));
+    gap: 1.5rem;
+    margin-top: 30px;
+}
+.customers-container .box{
+    padding: 20px;
+    box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+    border-radius: 0.5rem;
+    border-bottom: 7px solid green;
+}
+.customers-container .box:hover{
+    transform: translate(10px);
+    transition: 0.2s all linear;
+}
+.customers-container .box i{
+    font-size: 30px;
+    color: green;
+}
+.customers-container .box .stars i{
+    font-size: 15px;
+    color: orangered;
+}
+.customers-container .box p{
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+.review-profile{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    column-gap: 0.5rem;
+}
+.review-profile img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.review-profile h3{
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    color: orangered;
+}
+
+/* footr css */
+
+.footer{
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    /* gap: 1.5rem; */
+    margin-top: 20px;
+    background:#fef4ea;
+    border-radius: 0.5rem;
+    padding: 20px;
+    margin-top: 65px;
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+}
+.footer-box p{
+    font-size: 17px;
+    margin: 0.5rem 0 1rem;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.socia .i{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 5rem;
+    font-size: 20px;
+}
+.logo-1{
+    color: green;
+    font-size: 25px;
+    font-family: mv boli;
+    margin-right: 5px;
+    float: left;
+    padding-top: 10px;
+}
+.logo-1 i{
+    font-size: 25px;
+    color: orangered;
+}
+.logo-1 span{
+    color: orangered;
+}
+.social{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.social i{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border-radius: 5rem;
+    font-size: 20px;
+}
+.social i:hover{
+    background-color: orangered;
+    transition: 0.2s all linear;
+}
+.footer-box h3{
+    font-size: 20px;
+    color: green;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.footer-box a{
+    color: gray;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.footer-box a:hover{
+    color: rgb(24, 222, 24);
+}
+.footer-box form{
+    border-bottom: 2px solid green;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.footer-box form input{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.footer-box form i{
+    font-size: 20px;
+    color: orangered;
+    cursor: pointer;
+}
+.footer-box .fa-envelope{
+    color: green;
+}
+.copyright{
+    text-align: center;
+    padding: 20px;
+}
+
